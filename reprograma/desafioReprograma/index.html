@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop - Desafio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f3897c2d3a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://avatars.githubusercontent.com/u/103457494?v=4"
+        alt="deyse"
+      />
+      <h1>Workshop</h1>
+    </header>
+    <h2>Venha conhecer o valor do seu projeto</h2>
+
+    <section class="secao-hora">
+      <article class="secao__conteudo">
+        <div class="secao__formulario">
+          <fieldset>
+            <legend>Quanto você ganha por mês?</legend>
+            <div class="secao__formulario__grupo">
+              <label for="ganho-mes">Quantidade por mês </label>
+              <input id="ganho-mes" type="number" value="0" ><i  class="fa-regular fa-calendar-days"
+              ></i>
+             
+               
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Quantas horas você trabalha por dia?</legend>
+            <div class="secao__formulario__grupo">
+              <label for="horas-dia">Horas por dia</label>
+              <input id="horas-dia" type="number" value="0" /><i
+                class="fa-solid fa-clock"
+              ></i>
+            </div>
+          </fieldset>
+          <button class="calk" onclick="calcularValorHora()">
+            <i class="fa-solid fa-calculator"></i>Calcular
+          </button>
+        </div>
+      </article>
+      <footer class="secao__rodape">
+        <h3 class="secao__rodape__valor">
+          <span id="resposta">R$ 0,00</span><small>/hora</small>
+        </h3>
+        <p class="secao__rodape__legenda">Seu valor por hora</p>
+      </footer>
+    </section>
+
+    <footer class="footer">
+      <p>Para mais informações entre em contato:</p>
+      <a href="https://github.com/deysebonisegnia" target="_blank">
+        <i class="fa-brands fa-github"></i>Github
+      </a>
+      <a
+        href="https://www.linkedin.com/in/deyse-bonisegnia-995486171/"
+        target="_blank"
+      >
+        <i class="fa-brands fa-linkedin"></i>Linkedin
+      </a>
+      <p>Feito com <i class="fa-regular fa-heart"></i></p>
+    </footer>
+
+    <script type="text/javascript" src="desafio.js"></script>
+  </body>
+</html>
