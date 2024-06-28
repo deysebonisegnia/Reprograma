@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 :root {
-  --color-primary: #9b4e47;
-  --color-secondary: #fde7e5;
-  --color-border: #581612;
-  --color-background: #d39893;
-  --color-footer: rgb(211, 210, 208);
+  --color-primary: #c7bec5;
+  --color-secondary: #fce5f9;
+  --color-border: #4e094b;
+  --color-background: #fbe7f0;
+  --color-body: rgb(196, 195, 195);
+  --color-letra:rgb(70, 5, 68);
 }
 * {
   margin: 0;
@@ -18,34 +19,39 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgb(196, 195, 195);
+  background-color: var(--color-body);
+  color: var(--color-letra);
 }
 /*header*/
 header {
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  background-color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
   align-items: center;
+ padding: 3px;
 }
 img {
-  width: 10vw;
-  height: 10vh;
+  width: 8vw;
+  height: 8vh;
   border-radius: 50%;
-  border: 2px solid var(--color-border);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
 }
 img:hover {
   transform: scale(1.1);
 }
+
 h1:hover {
   transform: skew(20deg);
 }
 /*main*/
 h2 {
   margin: 1rem;
+  
 }
 h2 i{
-  color: #fde7e5;
+  color: #f7ebeb;
 }
 .secao-hora {
   display: flex;
@@ -53,22 +59,29 @@ h2 i{
   align-items: center;
   flex-direction: column;
   width: 100vw;
+  
 }
 .secao__conteudo {
-  background-color: var(--color-primary);
+  background-image:  linear-gradient(100deg , #683a5f, #ad6097,#a650abf3);
   width: 50vw;
   padding: 0.5rem;
   border-radius: 5px;
+  border: 1px solid var(--color-border);
+  margin-right: 2px;
+
 }
 
 fieldset {
   border: none;
+  
+  
 }
 
 legend,
 label {
   font-weight: bold;
   margin: 0.5rem;
+  
 }
 
 input {
@@ -76,6 +89,7 @@ input {
   text-align: center;
   background-color: var(--color-secondary);
   margin: 0.3rem 0.3rem 0.3rem 0;
+  
 }
 input:focus {
   border: 3px solid var(--color-border);
@@ -83,15 +97,12 @@ input:focus {
 }
 
 .secao__rodape {
-  border: 5px solid var(--color-primary);
+  border: 1px solid var(--color-border);
   width: 50vw;
   padding: 1rem;
   border-radius: 5px;
-}
-
-
-#resposta {
-  color: var(--color-border);
+  background-image:  linear-gradient(45deg , #683a5f, #cd75b4,#a059a4f3);
+  
 }
 
 .calk {
@@ -99,6 +110,8 @@ input:focus {
   width: 20vw;
   transition: all 1s ease-in-out;
   margin: 1rem;
+  background-color: var(--color-secondary);
+  
 }
 
 .calk:hover {
@@ -107,23 +120,22 @@ input:focus {
 }
 .calk i {
   font-size: 1rem;
-  color: var(--color-border);
+  color: var(--color-letra);
   margin-right: 0.5rem;
 }
 
 .footer {
-  background-color: var(--color-footer);
+  background-color: var(--color-body);
   width: 100vw;
-  color: var(--color-primary);
   display: flex;
   gap: 6px;
   flex-direction: column;
-  
+  border-top: 1px solid var(--color-border);
   
   
 }
 a {
-  color: var(--color-primary);
+  color: var(--color-letra);
   text-decoration: none;
 }
 
@@ -168,7 +180,7 @@ a {
 }
 /*animation*/
 footer p i {
-  color: red;
+  color: rgb(161, 37, 37);
 
   animation: heart 1s linear infinite;
 }
